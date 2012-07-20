@@ -20,10 +20,13 @@ set guioptions=acg
 set t_Co=256 "256 colores
 set mouse=a
 set background=dark
-colorscheme mustang
-"colorscheme molaki
+"colorscheme mustang
+colorscheme molokai
 "colorscheme xoria256
 "colorscheme calmar256-dark
+if has("gui_running")
+    set guifont=Terminus\ 10
+endif
 
 " ---------------------------------------------------------------------------- "
 " Preferencias para los tabs
@@ -50,6 +53,7 @@ set laststatus=2    " Linea de estado aunque haya solo una ventana
 set number          " Numeros de linea
 set wrapscan        " Set the search scan to wrap around the file
 set history=1000
+set clipboard=unnamed
 " Hacen casi lo mismo asi que los mapeo
 nnoremap ' `
 nnoremap ` '
@@ -92,3 +96,10 @@ set listchars=tab:▸\ ,eol:¬
 nmap <silent> ,ev :e $MYVIMRC<cr>
 nmap <silent> ,sv :so $MYVIMRC<cr>
 
+" ---------------------------------------------------------------------------- "
+" Mapeos
+" ---------------------------------------------------------------------------- "
+nmap <silent> ,t :NERDTreeToggle<cr>
+nmap <silent> ,be :BufExplorer<cr>
+nmap <silent> ,bv :BufExplorerVerticalSplit<cr>
+nmap <silent> ,bs :BufExplorerHorizontalSplit<cr>
