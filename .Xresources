@@ -1,0 +1,65 @@
+! file: ~/.Xresources
+!-------------------------------------------------------------------------------
+
+!-------------------------------------------------------------------------------
+! Xft
+!-------------------------------------------------------------------------------
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.dpi: 96
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+!-------------------------------------------------------------------------------
+! Colours
+!-------------------------------------------------------------------------------
+*background:#151515
+*foreground:#D7D0C7
+#include "/home/adri/.colours/econ"
+
+!-------------------------------------------------------------------------------
+! urxvt
+!-------------------------------------------------------------------------------
+URxvt.font: xft:Terminus:medium:pixelsize=11
+URxvt.boldFont: xft:Terminus:medium:pixelsize=11
+*URxvt.depth: 32
+*URxvt.background: [90]#000000
+*URxvt.saveLines: 14000
+*URxvt.externalBorder: 0
+*URxvt.internalBorder: 0
+*URxvt.mouseWheelScrollPage: false
+*URxvt.scrollTtyKeypress: true
+*URxvt.scrollWithBuffer: false
+*URxvt.scrollTtyOutput: false
+*URxvt.scrollBar: false
+*URxvt.foreground: white
+*URxvt.cursorColor: grey
+*URxvt.highlightColor: #D8DBE6
+*URxvt.highlightTextColor: #000000
+*URxvt.cursorColor2: black
+*URxvt.cursorBlink: false
+*URxvt.perl-ext-common: default,tabbedex,matcher,clipboard
+*URxvt.urlLauncher: /usr/bin/firefox
+*URxvt.keysym.Control-x: perl:clipboard:copy
+*URxvt.keysym.Control-v: perl:clipboard:paste
+*URxvt.matcher.button: 1
+*URxvt.underlineURLs: true
+URxvt*colorMode: on
+URxvt*cursorBlink: true
+URxvt*cursorUnderline: false
+!URxvt.iconFile: /home/intrntbrn/icons/client/term.png
+
+
+!-------------------------------------------------------------------------------
+! xterm
+!-------------------------------------------------------------------------------
+xterm*geometry: 60x25
+xterm*font: xft:Monaco:pixelsize=10
+xterm*boldFont: xft:Monaco:pixelsize=10
+xterm*saveLines: 8192
+xterm*scrollTtyKeypress: true
+xterm*scrollTtyOutput: false
+xterm*scrollBar: false
+xterm*toolBar: falsefound: vim:
